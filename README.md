@@ -3,18 +3,19 @@
 
 ## Replicate weight algorithms supported
 
-:x: Bootstrap
-:x: Jackknife
-:white_check_mark: BRR
-:white_check_mark: Fay's BRR 
+:x: Bootstrap  
+:x: Jackknife  
+:white_check_mark: BRR  
+:white_check_mark: Fay's BRR  
 
 ## Usage
-To use replicate weights for variance estimation the `glm_rw` function is used
-The data is passed to the function in a single `DataFrame`. 
-The replicate weight columns are specified using a suffix and prefix string. 
+To use replicate weights for variance estimation the `glm_rw` function is used.  
+The data is passed to the function in a single `DataFrame`.  
+The replicate weight columns are specified using a suffix and prefix string.  
 The replicate weight columns are assumed to be in asscending numeric order.  
-The forumla is specified using a [StatsModel.jl](https://juliastats.org/StatsModels.jl/stable) [`Formula Object`](https://juliastats.org/StatsModels.jl/stable/formula/).
-Most functions follow the `glm` function call specified in [GLM.jl](https://juliastats.org/GLM.jl/stable/#Fitting-GLM-models).
+The forumla is specified using a [StatsModel.jl](https://juliastats.org/StatsModels.jl/stable) [`Formula Object`](https://juliastats.org/StatsModels.jl/stable/formula/).  
+Most functions follow the `glm` function call specified in [GLM.jl](https://juliastats.org/GLM.jl/stable/#Fitting-GLM-models).  
+
 Below is an example using Fay's BRR.
 
 ```julia
